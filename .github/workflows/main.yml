@@ -2,8 +2,7 @@ name: Test Scientific Calculator
 
 on: 
   push:
-    branches:
-      -main
+    
 
 jobs: 
   build:
