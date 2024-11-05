@@ -1,0 +1,19 @@
+name: Test Scientific Calculator
+
+on: 
+  push:
+    branches:
+      -main
+
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+
+    steps: 
+  #clone to runner system
+    - name: Checkout
+      uses: actions/checkout@v2
+
+  #run the python test case 
+    - name: Run Test
+      run: python test_scientific_calculator.py
